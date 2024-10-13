@@ -82,17 +82,6 @@ void saveItems(const std::string& filepath, const State& items, int cap, int cos
     }
 }
 
-void sortItems(State& items)
-{
-    std::sort(
-        items.begin(), 
-        items.end(), 
-        [](const Item& a, const Item& b) {
-            return double(a.c / a.w) > double(b.c / b.w);
-        });
-}
-
-
 void initRandomState(State& state, int Cap)
 {
     int W = 0;
