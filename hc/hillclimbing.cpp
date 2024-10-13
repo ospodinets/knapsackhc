@@ -194,7 +194,7 @@ void hillclimbing(State& x, int Cap, int numAttempts, int& profit, FILE* logfile
                 C0 = Cy;
                 Px = Py;
                 found = true;
-                ndistance = ndistance * 4;
+                ndistance = ndistance * 2;
                 if( ndistance > x.size() )
                     ndistance = x.size();
 
@@ -203,7 +203,7 @@ void hillclimbing(State& x, int Cap, int numAttempts, int& profit, FILE* logfile
         }
         if (!found)
         {
-            ndistance = ndistance / 4;
+            ndistance = ndistance / 2;
         }
     }
 
