@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tabusearch", "ts\tabusearch.vcxproj", "{143D167C-3826-46AC-A1A4-60E94BD8D3BF}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "antcolony", "antcolony\antcolony.vcxproj", "{D71D665E-E7A9-477A-BA69-3782167CCC00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -53,6 +55,14 @@ Global
 		{143D167C-3826-46AC-A1A4-60E94BD8D3BF}.Release|x64.Build.0 = Release|x64
 		{143D167C-3826-46AC-A1A4-60E94BD8D3BF}.Release|x86.ActiveCfg = Release|Win32
 		{143D167C-3826-46AC-A1A4-60E94BD8D3BF}.Release|x86.Build.0 = Release|Win32
+		{D71D665E-E7A9-477A-BA69-3782167CCC00}.Debug|x64.ActiveCfg = Debug|x64
+		{D71D665E-E7A9-477A-BA69-3782167CCC00}.Debug|x64.Build.0 = Debug|x64
+		{D71D665E-E7A9-477A-BA69-3782167CCC00}.Debug|x86.ActiveCfg = Debug|Win32
+		{D71D665E-E7A9-477A-BA69-3782167CCC00}.Debug|x86.Build.0 = Debug|Win32
+		{D71D665E-E7A9-477A-BA69-3782167CCC00}.Release|x64.ActiveCfg = Release|x64
+		{D71D665E-E7A9-477A-BA69-3782167CCC00}.Release|x64.Build.0 = Release|x64
+		{D71D665E-E7A9-477A-BA69-3782167CCC00}.Release|x86.ActiveCfg = Release|Win32
+		{D71D665E-E7A9-477A-BA69-3782167CCC00}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
