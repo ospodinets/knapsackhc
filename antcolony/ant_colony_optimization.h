@@ -20,9 +20,6 @@ public:
             , x(false)
             , attractiveness(0.0)
         {
-            // 1
-            //attractiveness = double(c) / double(w * w);
-            // 2
             attractiveness = double(c) / double(w);
         }
 

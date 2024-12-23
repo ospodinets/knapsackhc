@@ -215,26 +215,24 @@ struct ACO::Impl
             if (knapsack.getCost() > best.getCost())
             {
                 best = knapsack;
-
-                // pheromone amount which is left by the ant
-                double pheromone = 1 / (1 + (best.getCost() - knapsack.getCost()) / best.getCost());
-
-
-                for (auto& edge : path)
-                {
-                    if (edge.i >= 0)
-                    {
-                        pheromoneRemnant[edge.i][edge.j] += pheromone;
-                        //pheromoneRemnant[edge.j][edge.i] += pheromone;
-                    }
-                        
-                }
-
-                // evaporate pheromone
-                for (int i = 0; i < pheromoneRemnant.size(); ++i)
-                    for (int j = 0; j < pheromoneRemnant[i].size(); ++j)
-                        pheromoneRemnant[i][j] *= evaporation;
             }
+
+            // pheromone amount which is left by the ant
+            double pheromone = 1.0 / (1.0 + (best.getCost() - knapsack.getCost()) / best.getCost());
+
+            for (auto& edge : path)
+            {
+                if (edge.i >= 0)
+                {
+                    pheromoneRemnant[edge.i][edge.j] += pheromone;
+                }
+            }
+
+            // evaporate pheromone
+            for (int i = 0; i < pheromoneRemnant.size(); ++i)
+                for (int j = 0; j < pheromoneRemnant[i].size(); ++j)
+                    pheromoneRemnant[i][j] *= evaporation;
+            
         }
 
         Profit = best.getCost();
